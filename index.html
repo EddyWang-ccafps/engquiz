@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Vocabulary Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>英文單字測驗</h1>
+        <div id="quiz-container">
+            <div id="timer">15</div>
+            <div id="question-container">
+                <div class="word-container">
+                    <span id="current-word"></span>
+                    <button id="audio-btn" class="audio-btn">
+                        <i class="fas fa-volume-up"></i>
+                    </button>
+                </div>
+            </div>
+            <div id="options-container">
+                <!-- Options will be inserted here by JavaScript -->
+            </div>
+            <div id="feedback" class="hidden"></div>
+            <button id="next-btn" class="btn hidden">下一題</button>
+            <div id="result-container" class="hidden">
+                <h2>測驗完成！</h2>
+                <p>你的分數: <span id="score">0</span></p>
+                <button id="restart-btn" class="btn">重新開始</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
